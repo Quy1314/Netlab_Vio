@@ -22,7 +22,7 @@ Tại ***Statistics/Endpoint***, ta có thể sắp xếp lại cột packet đ�
 ## ```Q6.Where is the headquarter of the company that manufactured the NIC of the most active computer at the link level?```  
 Bạn cần tìm kiếm trụ sở chính của công ty bằng cách tìm kiếm nó trên **Google**.  
 ![image](https://github.com/user-attachments/assets/8b953667-8145-4432-b911-fc6c964b0c30)  
-```Answer: Palo Alto```  
+**```Answer: Palo Alto```**  
 ## ```Q7.The organization works with private addressing and netmask /24. How many computers in the organization are involved in the capture?```    
 Tại ***Statistics/Endpoint/IPv4***, để tìm số máy tính của tổ chức làm việc với ```private addressing and netmask /24``` ta có thể dựa vào địa chỉ ip của nó có dạng: **```10.0.0.1 - 10.0.0.254```**  
 ![image](https://github.com/user-attachments/assets/2c26ac85-b247-4ae1-8b92-c8e2acce04a4)  
@@ -82,10 +82,10 @@ Tại **User Agent** ta có thể thấy hệ điều của máy tính là ```Wi
 **```Answer: tkraw_Protected99.exe```**  \
 ## ```Q15.What is the md5 hash of the downloaded file?```  
 Sau khi tải file độc về, ta có thể sử dụng [MD5 Hash File Check Tools](https://emn178.github.io/online-tools/md5_checksum.html)  
-**```Answer: 71826ba081e303866ce2a2534491a2f7```**
-
-
-
+**```Answer: 71826ba081e303866ce2a2534491a2f7```**  
+## ```Q16.What software runs the webserver that hosts the malware?```  
+Tiếp theo, ta có thể truy cập đến gói tin chứa mã độc là ```3155```
+![image](https://github.com/user-attachments/assets/215e7ce7-1eb4-457e-ad42-c4e507009208)
 
 
 
