@@ -110,7 +110,30 @@ Sau khi follow đến luồng TCP thứ 37 thì ta tìm thấy được tên ph�
 ## ```Q20.To which email account is the stolen information sent?```  
 Email của tài khoản đánh cắp được tìm thấy cùng với tên phần mềm.  
 ![image](https://github.com/user-attachments/assets/166c14e2-b10e-419e-92f0-f8385fc2ccd1)  
-**```Answer: <sales.del@macwinlogistics.in>```**  
+**```Answer: <sales.del@macwinlogistics.in>```**    
+## ```Q21.What is the password used by the malware to send the email?```  
+![image](https://github.com/user-attachments/assets/cd30775a-c168-4382-9203-7085a7bebc57)  
+Sau khi đọc thông tin của cuộc hội thoại thì t nghi ngờ đây có thể là quá trình đăng nhập tài khoản nên t đã dùng CyperChef để dịch đoạn base64 này ra để nhận mật khẩu.  
+![image](https://github.com/user-attachments/assets/56dc35eb-9cb1-4b4d-8b66-fadad667d6bf)  
+**```Answer: Sales@23```**  
+## ```Q22.Which malware variant exfiltrated the data?```  
+![image](https://github.com/user-attachments/assets/f3d5457c-8832-4ac9-85f5-579ccd7449c6)  
+Sau khi giải mã đoạn base64 phía dưới cùng thì ta biết được mã độc là  ```HawkEye Keylogger - Reborn v9```.  
+**```Answer: Reborn v9```**  
+## ```Q23.What are the bankofamerica access credentials? (username:password)```
+![image](https://github.com/user-attachments/assets/63c52b42-e321-44dd-9804-b5833cf9511d)
+Trong phần thông tin mã hóa, ta có thể tìm được thông tin về tài khoản ngân hàng của nạn nhân.  
+**```Answer: roman.mcguire:P@ssw0rd$```**  
+## ```Q24.Every how many minutes does the collected data get exfiltrated?```  
+Sau khi lọc các gói tin SMTP, ta dễ dàng nhận ra cứ cách 10 phút thì dữ liệu lại bị rõ rỉ.  
+![image](https://github.com/user-attachments/assets/e8458a51-288c-42bf-8cee-4641945985d6)  
+**```Answer: 10```**  
+
+
+
+
+
+
 
 
 
