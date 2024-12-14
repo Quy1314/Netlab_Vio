@@ -106,7 +106,14 @@ ip.src ==10.4.10.132 && smtp && tcp
 ```
 ![image](https://github.com/user-attachments/assets/7f4cb04e-008c-4ff5-8f29-aea86d646b62)  
 Sau khi follow đến luồng TCP thứ 37 thì ta tìm thấy được tên phần mềm đã chạy ```email websever```.  
-**```Answer: Exim 4.91```**
+**```Answer: Exim 4.91```**  
+## ```Q20.To which email account is the stolen information sent?```  
+Email của tài khoản đánh cắp được tìm thấy cùng với tên phần mềm.  
+![image](https://github.com/user-attachments/assets/166c14e2-b10e-419e-92f0-f8385fc2ccd1)  
+**```Answer: <sales.del@macwinlogistics.in>```**  
+
+
+
 
 
 
