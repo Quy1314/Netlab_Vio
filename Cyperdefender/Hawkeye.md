@@ -99,7 +99,7 @@ Tại các gói tin đó ta có thể tìm thấy ```Public IP``` của nạn nh
 ## ```Q18.In which country is the email server to which the stolen information is sent?```    
 Ta có thể tìm kiếm máy chủ email của nạn nhân bằng cách sử dụng [Geolocation] và tìm kiếm bằng ip của nạn nhân.  
 **```Answer: United States```**  
-## ```Q19.Analyzing the first extraction of information. What software runs the email server to which the stolen data is sent?  
+## ```Q19.Analyzing the first extraction of information. What software runs the email server to which the stolen data is sent?```  
 Để có thể tìm ra phấn mềm chạy ```email websever``` ta có thể phân tích từ các giao thức như: SMTP,TCP và từ địa chỉ ip của máy chủ gửi mã độc là: ```10.4.10.132``` sau đó có thể follow theo tcp stream để tìm.  
 ```Wireshark
 ip.src ==10.4.10.132 && smtp && tcp
