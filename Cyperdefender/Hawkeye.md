@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/88674733-df59-4313-95d5-9151068ae0e4)# [HawkeyeLab](https://cyberdefenders.org/blueteam-ctf-challenges/hawkeye/)
+# [HawkeyeLab](https://cyberdefenders.org/blueteam-ctf-challenges/hawkeye/)
 ## ```Q1.How many packets does the capture have?```  
 ![image](https://github.com/user-attachments/assets/848f0b0b-b889-4b29-8dbc-16469cc19564)  
 Sau khi mở file bằng Wireshark, ta có thể thấy số packet ở bên dưới góc phải màn hình.   
@@ -85,7 +85,30 @@ Sau khi tải file độc về, ta có thể sử dụng [MD5 Hash File Check To
 **```Answer: 71826ba081e303866ce2a2534491a2f7```**  
 ## ```Q16.What software runs the webserver that hosts the malware?```  
 Tiếp theo, ta có thể truy cập đến gói tin chứa mã độc là ```3155```
-![image](https://github.com/user-attachments/assets/215e7ce7-1eb4-457e-ad42-c4e507009208)
+![image](https://github.com/user-attachments/assets/215e7ce7-1eb4-457e-ad42-c4e507009208)  
+Tại header: ```sever``` ta sẽ thấy được phần mềm chạy websever chứa mã độc.  
+**```Answer: Litespeed```**  
+## ```Q17.What is the public IP of the victim's computer?```  
+Như ta đã biết ip của máy tính phát mã độc là 10.4.10.132 do đó để tìm kiếm ```Public Ip``` của máy tính nạn nhân ta có thể dựa trên các gói tin HTTP có địa chỉ đến là 10.4.10.132:  
+```Wireshark
+http && ip.dst == 10.4.10.132
+```
+Tại các gói tin đó ta có thể tìm thấy ```Public IP``` của nạn nhân.  
+![image](https://github.com/user-attachments/assets/3d1a0127-0848-4452-8ee9-1d2114d295c3)  
+**```Answer: 173.66.146.112```**  
+## ```Q18.In which country is the email server to which the stolen information is sent?```    
+Ta có thể tìm kiếm máy chủ email của nạn nhân bằng cách sử dụng [Geolocation] và tìm kiếm bằng ip của nạn nhân.  
+**```Answer: United States```**  
+## ```Q19.Analyzing the first extraction of information. What software runs the email server to which the stolen data is sent?  
+Để có thể tìm ra phấn mềm chạy ```email websever``` ta có thể phân tích từ các giao thức như: SMTP,TCP và từ địa chỉ ip của máy chủ gửi mã độc là: ```10.4.10.132``` sau đó có thể follow theo tcp stream để tìm.  
+```Wireshark
+ip.src ==10.4.10.132 && smtp && tcp
+```
+![image](https://github.com/user-attachments/assets/7f4cb04e-008c-4ff5-8f29-aea86d646b62)  
+Sau khi follow đến luồng TCP thứ 37 thì ta tìm thấy được tên phần mềm đã chạy ```email websever```.  
+**```Answer: Exim 4.91```**
+
+
 
 
 
